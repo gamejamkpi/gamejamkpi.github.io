@@ -1,0 +1,60 @@
+.modal-wrap {
+    padding: 40px 0;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.camera {
+    color: #f44336;
+}
+
+.register-modal {
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+    height: 70px;
+    margin: 0;
+}
+
+.join-span {
+    font-weight: 500;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.social-img {
+    margin: 0 15px;
+}
+
+.chapter {
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.chapter:hover {
+    background-color: #f44336;
+    -webkit-box-shadow: 0px 1px 24px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 1px 24px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 24px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    width: 102%;
+    margin: 0 0 10px -6px;
+}
+
+.camera-icon {
+    margin: 0 0 4px 0;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: #333;
+}
