@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="/css/material/css/material.css">
+    <link rel="stylesheet" href="/css/swiper-loop.min.css">
+    <style>
+        body {
+            background-color: #fff;
+        }
+        
+        .swiper-container {
+            max-width: 600px;
+            height: 180px;
+        }
+        
+        .swiper-button-next,
+        .swiper-button-prev {
+            top: 90px;
+        }
+        
+        .swiper-pagination {
+            display: none;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 16px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        img {
+            height: 180px;
+        }
+        
+        .name {
+            font-weight: bold;
+        }
+        
+        .about {
+            color: #727272;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://vk.com/kpi_live" target="_blank"><img src="/images/support/live.png" class="support-img" alt="kpilive-logo"></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://vk.com/itkpi" target="_blank"></img><img src="/images/support/it.png" class="support-img" alt="itkpi-logo"></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://vk.com/ssa_kpi" target="_blank"></img><img id="ssa-img" src="/images/support/ntsa.png" class="support-img" alt="ntsa-logo"></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://vk.com/rkpime" target="_blank"></img><img src="/images/support/radio.png" class="support-img" alt="radio-logo"></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <a href="https://vk.com/kpitv" target="_blank"></img><img src="/images/support/tv.png" class="support-img" alt="kpitv-logo"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="/js/swiper-loop.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 30,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

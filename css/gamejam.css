@@ -3,19 +3,18 @@ body {
 }
 
 #wrap {
-    /*margin: auto;*/
-    /*max-width: 1440px;*/
     overflow: hidden;
 }
 
 .header {
-    height: 600px;
-    background: url('/images/valik.png') 50% 50% no-repeat;
+    /*width: 100%;*/
+    height: 100%;
+    background: url('/images/valik.png') no-repeat;
     background-size: cover;
 }
 
 .header-menu {
-    height: 84px;
+    height: 70px;
     width: 100%;
     padding: 0;
     border-radius: 0;
@@ -23,17 +22,17 @@ body {
 }
 
 .menu-logo {
-    height: 84px;
+    height: 70px;
 }
 
 .menu-authentication {
-    height: 84px;
+    height: 70px;
     text-align: center;
-    padding: 28px 0;
+    padding: 18px 0;
 }
 
 .menu-more {
-    height: 84px;
+    height: 70px;
 }
 
 .or {
@@ -42,7 +41,7 @@ body {
 
 #menu-more {
     float: right;
-    margin: 26px;
+    margin: 13px 8px;
 }
 
 #vk,
@@ -59,9 +58,9 @@ body {
 .title {
     color: #fff;
     text-align: right;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 #arrow {
@@ -75,17 +74,19 @@ body {
 
 .about-title {
     color: #000;
-    font-size: 25px;
+    font-size: 18px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
+    letter-spacing: 2px;
     text-align: center;
-    margin: 15px 0;
+    margin: 35px 0 15px 0
 }
 
 .about-text {
     color: #727272;
-    font-size: 20px;
-    margin: 30px 0 0 0;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding: 0 30px;
 }
 
 .pacman-img {
@@ -94,9 +95,10 @@ body {
 }
 
 .pacman-text {
-    margin: 30px 30px 30px 0;
+    margin: 30px 0;
     color: #727272;
-    font-size: 20px;
+    font-size: 16px;
+    padding: 0 30px;
 }
 
 .divider {
@@ -123,23 +125,25 @@ body {
     position: relative;
     top: 20px;
     left: 60px;
-    font-size: 18px;
+    font-size: 16px;
     color: #cecece;
 }
 
 .date {
     background-color: #f44538;
-    padding-bottom: 30px;
     color: #fff;
     overflow: hidden;
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
 }
 
 .date-title {
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
-    margin: 15px 0;
+    margin: 25px 0 15px;
 }
 
 .date-where {
@@ -147,8 +151,6 @@ body {
 }
 
 .place-icon {
-    text-align: center;
-    width: 20%;
     float: left;
     padding-top: 50px;
 }
@@ -160,11 +162,14 @@ body {
     padding: 50px 0;
 }
 
-.place-text,
 .place-time {
     width: 80%;
     float: right;
-    padding: 20px 0;
+    padding: 20px 0 15px;
+}
+
+.place-text {
+    padding: 0 30px;
 }
 
 .place-details {
@@ -174,12 +179,13 @@ body {
 }
 
 .place-icon-size {
+    float: left;
     font-size: 35px;
 }
 
 .p-route {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
     line-height: 32px;
     margin: 16px 0;
@@ -188,7 +194,7 @@ body {
 
 .p-where {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
     line-height: 32px;
 }
@@ -197,49 +203,46 @@ body {
     width: 100%;
 }
 
-.no-padding {
-    padding: 0;
-}
-
 .p-schedule {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.sponsors{
+.sponsors {
     text-align: center;
 }
+
 .sponsors-img {
-    height: 200px;
-    margin-bottom: 30px;
+    height: 150px;
+    margin: 16px 0 40px;
 }
 
 .sponsors-title {
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
-    margin: 15px 0;
+    margin: 40px 0;
 }
 
 .translation-title {
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
     margin: 15px 0;
 }
 
 .translation-info {
     color: #f44336;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 18px;
     margin: 30px 187px;
 }
 
@@ -255,14 +258,15 @@ body {
 }
 
 .registraion {
-    margin: 40px 0;
+    margin: 60px 0;
+    text-align: center;
 }
 
 .register-title {
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 18px;
     margin: auto;
     text-align: center;
 }
@@ -274,33 +278,35 @@ body {
 .myinput {
     color: #b6b6b6;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .myButton {
-    width: 100%;
-    font-weight: 600;
+    width: 50%;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 17px;
-    margin: 80px 0;
+    margin: 45px 0 20px;
     height: 70px;
+    color: #fff !important;
 }
 
 .contacts {
     background-color: #f44336;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
+    overflow: hidden;
 }
 
 .cont-wrap-left {
     height: 180px;
-    margin: 0;
+    margin: 0 30px;
 }
 
 .cont-wrap-right {
     height: 180px;
-    margin: 0;
+    margin: 0 30px;
 }
 
 .tel-icon-block,
@@ -326,12 +332,17 @@ body {
     position: relative;
 }
 
-.contact {
-    margin-left: 40px;
+.contact-first {
+    margin-left: 15px;
 }
 
-.email-adress {
+.contact {
+    margin-left: 55px;
+}
+
+a.email-adress {
     margin-left: 16px;
+    color: white;
 }
 
 .vk-adress {
@@ -345,30 +356,30 @@ body {
 }
 
 .organizators-title {
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
     margin: 20px 0;
 }
 
 .mentors-title {
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
     margin: 20px 0;
 }
 
 .iframe-organizators {
-    height: 450px;
+    height: 320px;
     width: 100%;
 }
 
 .iframe-gallery {
-    height: 360px;
+    height: 260px;
     width: 100%;
 }
 
@@ -397,20 +408,17 @@ body {
 }
 
 .mentor-name {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .mentor-about {
-    font-size: 18px;
+    font-size: 16px;
     color: #727272;
 }
 
 .footer-title {
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     color: #727272;
 }
@@ -424,24 +432,50 @@ body {
         margin: 0 100px;
     }
     .cont-wrap-left {
-        margin: 30px 40px 30px 0;
+        margin: 60px 40px 30px 0;
         float: right;
     }
     .cont-wrap-right {
         float: left;
-        margin: 30px 0 30px 40px;
+        margin: 60px 0 30px 40px;
     }
     .place-icon {
-        padding: 20px 0 0 0;
+        padding: 0;
     }
     .or {
-        margin: 0 24px;
+        margin: 0 10px;
     }
     .title {
-        font-size: 25px;
+        font-size: 18px;
     }
     .pacman-img {
         margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .myButton {
+        width: 90%;
+    }
+    .sponsors-img {
+        width: 80%;
+    }
+    .join-div {
+        margin: 15px 0;
+    }
+    .modal-wrap {
+        padding: 0;
+        padding-top: 15px;
+    }
+    .pacman-img img {
+        width: 90%;
+    }
+    .pacman-text {
+        margin-top: 5px;
+    }
+    .about-text {
+        margin-top: 0;
+        margin-bottom: 5px;
     }
 }
 
@@ -449,7 +483,7 @@ body {
     /*color: black;*/
     /*position: absolute;*/
     /*width: 600px;*/
-    padding: 50px 0;
+    padding-top: 50px;
     /*left: 100%;*/
     /*z-index: 100;*/
     background-color: #fff;
@@ -461,13 +495,12 @@ body {
     cursor: pointer;
 }
 
-.plan-content {
-}
+.plan-content {}
 
 .day1,
 .day2 {
     color: #212121;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     width: 300px;
     margin: 20px auto;
@@ -479,7 +512,7 @@ body {
 
 .plan {
     color: #7b7b7b;
-    margin: 50px 0;
+    margin-top: 50px;
     font-size: 16px;
 }
 
@@ -493,15 +526,68 @@ body {
     display: none;
 }
 
-.support-img{
-    width: 20%;
+.support {
+    text-align: center;
 }
 
-.support-title{
-     color: #000;
-    font-size: 25px;
+.support-img {
+    height: 200px;
+}
+
+#ssa-img {
+    margin-left: 45px;
+}
+
+@media (max-width: 960px) {
+    .support-img {
+        width: 50%;
+        height: auto;
+    }
+    #ssa-img {
+        margin-left: 0;
+    }
+    #support {
+        display: none;
+    }
+    #support-mobile {
+        display: block;
+    }
+}
+@media (min-width: 959px) {
+    #registrationModal .modal-content {
+        width: 700px;
+    }
+    #support {
+        display: block;
+    }
+    #support-mobile {
+        display: none;
+    }
+}
+
+.support-title {
+    font-weight: 400;
     text-transform: uppercase;
-    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 18px;
     text-align: center;
-    margin: 15px 0;
+    margin: 15px 0 40px;
+}
+
+#registrationModal .modal-content {
+    border-radius: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+#registerButton {
+    color: white;
+}
+
+.modal-header .close {
+    font-size: 32px;
+}
+
+#registrationModal .modal-header {
+    right: 15px;
+    position: absolute;
 }

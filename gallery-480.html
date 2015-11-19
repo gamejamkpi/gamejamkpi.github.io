@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="/css/swiper-loop.min.css">
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container-horizontal>.swiper-pagination {
+            bottom: 15px;
+        }
+        
+        .swiper-pagination-bullet-active {
+            background: #3279ED !important;
+        }
+        
+        .swiper-button-prev {
+            left: 12px;
+            background-size: cover;
+            background-position: left;
+            background-image: url("/images/svg/left-white.svg");
+        }
+        
+        .swiper-button-next {
+            right: 12px;
+            background-size: cover;
+            background-position: right;
+            background-image: url("/images/svg/right-white.svg");
+        }
+        
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            opacity: 1;
+        }
+        
+        .swiper-container {
+            width: 480px;
+            height: 250px;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .img-slide {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/images/gallery/pic-1.jpg" class="img-slide"></div>
+            <div class="swiper-slide"><img src="/images/gallery/pic-2.jpg" class="img-slide"></div>
+            <div class="swiper-slide"><img src="/images/gallery/pic-3.jpg" class="img-slide"></div>
+            <div class="swiper-slide"><img src="/images/gallery/pic-1.jpg" class="img-slide"></div>
+            <div class="swiper-slide"><img src="/images/gallery/pic-2.jpg" class="img-slide"></div>
+            <div class="swiper-slide"><img src="/images/gallery/pic-3.jpg" class="img-slide"></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <script src="/js/swiper-loop.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 0,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>

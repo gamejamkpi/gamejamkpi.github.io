@@ -19,7 +19,9 @@ window.onload = function() {
     //hide modal when 'registration' pressed
     document.getElementById("registerButton").addEventListener('click', function() {
         $('#menuModal').modal('hide');
-        $('#registrationModal').modal();
+        setTimeout(function() {
+            $('#registrationModal').modal('show');
+        }, 500);
     }, true);
 
     //detailed plane fade in
@@ -63,4 +65,25 @@ window.onload = function() {
         function() {
             $('#camera-icon').attr('src', '/images/video-icon.png')
         });
+
+    $('#vk').hover(
+        function() {
+            $('#vk').attr('src', '/images/vk-blue.png')
+        },
+        function() {
+            $('#vk').attr('src', '/images/vk.png')
+        });
+
+    $('#fb').hover(
+        function() {
+            $('#fb').attr('src', '/images/fb-blue.png')
+        },
+        function() {
+            $('#fb').attr('src', '/images/fb.png')
+        });
+
+    // function calcTimeToEvent() {
+    //     var now = Date();
+    //     var event = new Date(2015,10,)
+    // }
 };
