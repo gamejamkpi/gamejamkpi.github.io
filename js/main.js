@@ -20,13 +20,13 @@ var gamajam = {} || gamajam;
             }, true);
         }
 
-        //hide modalMenu when 'registration' pressed
-        document.getElementById("registerButton").addEventListener('click', function() {
-            $('#menuModal').modal('hide');
-            setTimeout(function() {
-                $('#registrationModal').modal('show');
-            }, 500);
-        }, true);
+        // //hide modalMenu when 'registration' pressed
+        // document.getElementById("registerButton").addEventListener('click', function() {
+        //     $('#menuModal').modal('hide');
+        //     setTimeout(function() {
+        //         $('#registrationModal').modal('show');
+        //     }, 500);
+        // }, true);
 
         //megaHOVERs 
         $('#camera-icon-p').hover(
